@@ -39,7 +39,3 @@ class ParserConf():
         for section in conf.sections():
             for (key, value) in conf.items(section):
                 self.processValue(key, value)
-
-        # Following fours parameters are the common ones in all experiments
-        self.model_name = model_name
-        self.data_name = data_name
