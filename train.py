@@ -12,7 +12,7 @@ import tensorflow as tf
 
 from Logging import Logging
 
-def start(conf, data, model, evaluate, clean):
+def start(conf, data, model, evaluate):
     # define log name 
     log_path = os.path.join(os.getcwd(), 'log/%s_%s.log' % (conf.data_name, conf.model_name))
 
