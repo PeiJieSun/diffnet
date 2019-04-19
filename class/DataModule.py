@@ -1,3 +1,9 @@
+'''
+    author: Peijie Sun
+    e-mail: sun.hfut@gmail.com 
+    released date: 04/18/2019
+'''
+
 from collections import defaultdict
 import numpy as np
 from time import time
