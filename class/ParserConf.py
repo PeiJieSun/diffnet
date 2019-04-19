@@ -29,7 +29,7 @@ class ParserConf():
         else:
             print('%s value is None' % key)
 
-    def parserConf(self, platform_config='', data_name='', model_name=''):
+    def parserConf(self):
         conf = cp.ConfigParser()
         conf.read(self.config_path)
         self.conf = conf
@@ -41,9 +41,5 @@ class ParserConf():
                 self.processValue(key, value)
 
         # Following fours parameters are the common ones in all experiments
-        if platform_config != '':
-            self.model_name = model_name
-            self.data_name = data_name
-            self.root_dir = os.path.join(platform_config.app_log_dir, data_name)
-            # Ex: /home/sunpeijie/files/task/pyrec/data/dual_amazon_books/dual_amazon_books
-            self.data_dir = os.path.join(platform_config.app_data_dir, data_name, data_name)
+        self.model_name = model_name
+        self.data_name = data_name
