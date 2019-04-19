@@ -41,3 +41,5 @@ class ParserConf():
        
         self.data_dir = os.path.join(os.getcwd(), 'data/%s' % self.data_name)
         self.links_filename = os.path.join(os.getcwd(), 'data/%s/%s.links' % (self.data_name, self.data_name))
+        self.user_review_vector_matrix = os.path.ioin(os.getcwd(), 'data/%s/user_vector.npy' % self.data_name)
+        self.item_review_vector_matrix = os.path.join(os.getcwd(), 'data/%s/item_vector.npy' % self.data_name)
