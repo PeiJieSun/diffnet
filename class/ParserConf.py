@@ -38,4 +38,5 @@ class ParserConf():
 
         for section in conf.sections():
             for (key, value) in conf.items(section):
+                print(key, value)
                 self.processValue(key, value)
