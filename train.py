@@ -129,7 +129,7 @@ def start(conf, data, model, evaluate):
 
         d_test_eva.index = 0 # !!!important, prepare for new batch
         hr, ndcg = evaluate.evaluateRankingPerformance(\
-            index_dict, positive_predictions, negative_predictions, conf.topK, conf.num_procs)
+            index_dict, positive_predictions, negative_predictions, conf.topk, conf.num_procs)
         tt3 = time()
                 
         # print log to console and log_file
