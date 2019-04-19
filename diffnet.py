@@ -1,5 +1,7 @@
 '''
- The original SocialGCN model, which is renamed as DIP
+    author: Peijie Sun
+    e-mail: sun.hfut@gmail.com 
+    released date: 04/18/2019
 '''
 import tensorflow as tf
 import numpy as np
