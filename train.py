@@ -15,6 +15,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' #ignore the warnings
 from Logging import Logging
 
 def start(conf, data, model, evaluate):
+    log_dir = os.path.join(os.getcwd(), 'log')
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
     # define log name 
     log_path = os.path.join(os.getcwd(), 'log/%s_%s.log' % (conf.data_name, conf.model_name))
 
