@@ -30,15 +30,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Welcome to the Experiment Platform Entry')
     parser.add_argument('--data_name', nargs='?', help='data name')
     parser.add_argument('--model_name', nargs='?', help='model name')
-    parser.add_argument('--device_id', nargs='?', help='available gpu id')
+    parser.add_argument('--gpu', nargs='?', help='available gpu id')
 
     args = parser.parse_args()
 
     data_name = args.data_name
     model_name = args.model_name
-    device_id = args.device_id
-
-    os.environ['CUDA_VISIBLE_DEVICES'] = device_id
+    device_id = args.gpu
+    
+    if args.gpu:
+        os.environ['CUDA_VISIBLE_DEVICES'] = device_id
     config_path = os.path.join(os.getcwd(), 'conf/%s_%s.ini' % (data_name, model_name))
 
     executeTrainModel(config_path, model_name)
