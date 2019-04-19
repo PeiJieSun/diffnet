@@ -19,9 +19,9 @@ class DataUtil():
     
     def createTrainHandle(self):
         data_dir = self.conf.data_dir
-        train_filename = "%s.train.rating" % data_dir
-        val_filename = "%s.val.rating" % data_dir
-        test_filename = "%s.test.rating" % data_dir
+        train_filename = "%s/%s.train.rating" % (data_dir, self.conf.data_name)
+        val_filename = "%s/%s.val.rating" % (data_dir, self.conf.data_name)
+        test_filename = "%s/%s.test.rating" % (data_dir, self.conf.data_name)
 
         self.train = DataModule(self.conf, train_filename)
         self.val = DataModule(self.conf, val_filename)
@@ -29,8 +29,8 @@ class DataUtil():
 
     def createEvaluateHandle(self):
         data_dir = self.conf.data_dir
-        val_filename = "%s.val.rating" % data_dir
-        test_filename = "%s.test.rating" % data_dir
+        val_filename = "%s/%s.val.rating" % (data_dir, self.conf.data_name)
+        test_filename = "%s/%s.test.rating" % (data_dir, self.conf.data_name)
 
         self.val_eva = DataModule(self.conf, val_filename)
         self.test_eva = DataModule(self.conf, test_filename)
