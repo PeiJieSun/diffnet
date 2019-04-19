@@ -20,10 +20,9 @@ def executeTrainModel(config_path, model_name):
     #print('System start to load data...')
     data = DataUtil(conf)
     evaluate = Evaluate(conf)
-    clean = Clean()
 
     import train as starter
-    starter.start(conf, data, model, evaluate, clean)
+    starter.start(conf, data, model, evaluate)
     
 def executeTestModel(config_path, model_name):
     #print('System start to prepare parser config file...')
