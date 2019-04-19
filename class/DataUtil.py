@@ -1,6 +1,9 @@
 '''
-    The initial point, call data, generate train, val, test, test_eva, val_eva
+    author: Peijie Sun
+    e-mail: sun.hfut@gmail.com 
+    released date: 04/18/2019
 '''
+
 import os
 from time import time
 from DataModule import DataModule
