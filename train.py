@@ -52,6 +52,8 @@ def start(conf, data, model, evaluate):
 
     # set debug_flag=0, doesn't print any results
     log = Logging(log_path)
+    print()
+    log.record('Following will output the evaluation of the model:')
 
     # Start Training !!!
     for epoch in range(1, conf.epochs+1):
