@@ -5,7 +5,6 @@ sys.path.append(os.path.join(os.getcwd(), 'class'))
 from ParserConf import ParserConf
 from DataUtil import DataUtil
 from Evaluate import Evaluate
-from Clean import Clean
 
 from diffnet import diffnet
 
