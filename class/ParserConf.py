@@ -35,7 +35,7 @@ class ParserConf():
         self.conf = conf
 
         self.conf_dict = {}
-
+        print 'test%s' % '='*20
         for section in conf.sections():
             for (key, value) in conf.items(section):
                 print(key, value)
