@@ -35,8 +35,8 @@ class ParserConf():
         self.conf = conf
 
         self.conf_dict = {}
-        print 'test%s' % '='*20
         for section in conf.sections():
             for (key, value) in conf.items(section):
-                print(key, value)
                 self.processValue(key, value)
+       
+        self.data_dir = os.path.join(os.getcwd(), 'data/%s' % self.data_name)
