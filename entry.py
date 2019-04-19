@@ -1,3 +1,9 @@
+'''
+    author: Peijie Sun
+    e-mail: sun.hfut@gmail.com 
+    released date: 04/18/2019
+'''
+
 import sys, os, argparse
 
 sys.path.append(os.path.join(os.getcwd(), 'class'))
