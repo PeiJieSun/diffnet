@@ -4,7 +4,6 @@
 import os
 from time import time
 from DataModule import DataModule
-from DataText import DataText
 
 class DataUtil():
     def __init__(self, conf):
