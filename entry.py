@@ -13,7 +13,6 @@ def executeTrainModel(config_path, model_name):
     #print('System start to prepare parser config file...')
     conf = ParserConf(config_path)
     conf.parserConf()
-    print conf.topK
 
     #print('System start to load TensorFlow graph...')
     model = eval(model_name)
