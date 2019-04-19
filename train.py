@@ -45,7 +45,7 @@ def start(conf, data, model, evaluate):
     sess.run(model.init)
 
     if conf.pretrain_flag == 1:
-        model.saver1.restore(sess, conf.pre_model)
+        model.saver.restore(sess, conf.pre_model)
 
     # set debug_flag=0, doesn't print any results
     log = Logging(log_path)
