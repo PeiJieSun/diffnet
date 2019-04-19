@@ -1,4 +1,8 @@
-#coding: utf8
+'''
+    author: Peijie Sun
+    e-mail: sun.hfut@gmail.com 
+    released date: 04/18/2019
+'''
 
 import os, shutil
 import ConfigParser as cp
