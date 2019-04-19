@@ -40,3 +40,4 @@ class ParserConf():
                 self.processValue(key, value)
        
         self.data_dir = os.path.join(os.getcwd(), 'data/%s' % self.data_name)
+        self.links_name = os.path.join(o.getcwd(), 'data/%s/%s.links' % (self.data_name, self.data_name))
