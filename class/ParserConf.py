@@ -44,3 +44,4 @@ class ParserConf():
         self.links_filename = os.path.join(os.getcwd(), 'data/%s/%s.links' % (self.data_name, self.data_name))
         self.user_review_vector_matrix = os.path.join(os.getcwd(), 'data/%s/user_vector.npy' % self.data_name)
         self.item_review_vector_matrix = os.path.join(os.getcwd(), 'data/%s/item_vector.npy' % self.data_name)
+        self.pre_model = os.path.join(os.getcwd(), 'pretrain/%s/%s' % (self.data_name, self.pre_model))
