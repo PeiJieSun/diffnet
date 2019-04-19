@@ -9,6 +9,7 @@ from Evaluate import Evaluate
 from diffnet import diffnet
 
 def executeTrainModel(config_path, model_name):
+    print(config_path)
     #print('System start to prepare parser config file...')
     conf = ParserConf(config_path)
     conf.parserConf()
