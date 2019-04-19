@@ -60,7 +60,7 @@ if __name__ == "__main__":
     device_id = args.device_id
 
     os.environ['CUDA_VISIBLE_DEVICES'] = device_id
-    config_path = os.path.join(os.getcwd(), '%s_%s.ini' % (data_name, model_name))
+    config_path = os.path.join(os.getcwd(), 'conf/%s_%s.ini' % (data_name, model_name))
 
     if args.train:
         executeTrainModel(config_path, model_name)
