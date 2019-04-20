@@ -1,5 +1,6 @@
 ### Basic Information:
 This code is released for the paper: 
+
 Lewu, Peijie Sun, Yanjie Fu, Richang Hong, Xiting Wang and Meng Wang. A Neural Influence Diffusion Model for Social Recommendation. Accepted by SIGIR2019. 
 
 You can also download our paper from the arXiv: 
