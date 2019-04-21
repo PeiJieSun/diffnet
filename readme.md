@@ -14,7 +14,8 @@ Following is an example:
 `python entry.py --data_name=yelp --model_name=diffnet`
 
 ### Citation:
-`@article{HASC2019,
+```
+ @article{HASC2019,
   title={A Hierarchical Attention Model for Social Contextual Image Recommendation},
   author={Le, Wu and Lei, Chen and Richang, Hong and Yanjie, Fu and Xing, Xie and Meng, Wang},
   journal={IEEE Transactions on Knowledge and Data Engineering},
@@ -26,7 +27,8 @@ Following is an example:
  author={Le Wu, Peijie Sun, Yanjie Fu, Richang Hong, Xiting Wang and Meng Wang},
  conference={42nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
  year={2019}
- }`
+ }
+ ```
 
 ### Author contact:
 Email: sun.hfut@gmail.com
