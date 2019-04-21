@@ -15,6 +15,7 @@ Following is an example:
 
 ### Citation:
 ```
+The data flickr we use from this paper:
  @article{HASC2019,
   title={A Hierarchical Attention Model for Social Contextual Image Recommendation},
   author={Le, Wu and Lei, Chen and Richang, Hong and Yanjie, Fu and Xing, Xie and Meng, Wang},
@@ -22,6 +23,7 @@ Following is an example:
   year={2019}
  }
 
+ The algorithm is from tis paper:
  @inproceedings{DiffNet2019.
  title={A Neural Influence Diffusion Model for Social Recommendation},
  author={Le Wu, Peijie Sun, Yanjie Fu, Richang Hong, Xiting Wang and Meng Wang},
