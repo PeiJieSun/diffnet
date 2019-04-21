@@ -15,7 +15,7 @@ Following is an example:
 
 ### Citation:
 ```
-The data flickr we use from this paper:
+The dataset flickr we use from this paper:
  @article{HASC2019,
   title={A Hierarchical Attention Model for Social Contextual Image Recommendation},
   author={Le, Wu and Lei, Chen and Richang, Hong and Yanjie, Fu and Xing, Xie and Meng, Wang},
