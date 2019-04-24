@@ -3,7 +3,7 @@ This code is released for the paper:
 
 Le Wu, Peijie Sun, Yanjie Fu, Richang Hong, Xiting Wang and Meng Wang. A Neural Influence Diffusion Model for Social Recommendation. Accepted by SIGIR2019. 
 
-You can also preview our paper from the [arXiv](https://arxiv.org/submit/2661010/view).
+You can also preview our paper from the [arXiv](http://arxiv.org/abs/1904.10322).
 
 ### Usage:
 1. Environment: I have tested this code with python2.7, tensorflow-gpu-1.12.0 
