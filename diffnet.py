@@ -44,7 +44,7 @@ class diffnet():
 
     def convertDistribution(self, x):
         mean, var = tf.nn.moments(x, axes=[0, 1])
-        y = (x - mean) * 0.1 / tf.sqrt(var)
+        y = (x - mean) * 0.2 / tf.sqrt(var)
         return y
 
     def generateUserEmbeddingFromSocialNeighbors(self, current_user_embedding):
@@ -104,7 +104,7 @@ class diffnet():
 
         #self.fusion_user_embedding = self.user_fusion_layer(\
         #    tf.concat([self.user_embedding, second_user_review_vector_matrix], 1))
-        self.fusion_user_embedding = self.user_embedding #+ second_user_review_vector_matrix
+        self.fusion_user_embedding = self.user_embedding + second_user_review_vector_matrix
         first_gcn_user_embedding = self.generateUserEmbeddingFromSocialNeighbors(self.fusion_user_embedding)
         second_gcn_user_embedding = self.generateUserEmbeddingFromSocialNeighbors(first_gcn_user_embedding)
 
