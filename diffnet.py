@@ -107,13 +107,18 @@ class diffnet():
         self.fusion_user_embedding = self.user_embedding + second_user_review_vector_matrix
         first_gcn_user_embedding = self.generateUserEmbeddingFromSocialNeighbors(self.fusion_user_embedding)
         second_gcn_user_embedding = self.generateUserEmbeddingFromSocialNeighbors(first_gcn_user_embedding)
-
-        self.final_user_embedding = second_gcn_user_embedding + user_embedding_from_consumed_items
-
+        
+        # ORIGINAL OPERATION OF diffnet
+        #self.final_user_embedding = second_gcn_user_embedding + user_embedding_from_consumed_items
+        
+        # FOLLOWING OPERATION IS USED TO TACKLE THE GRAPH OVERSMOOTHING ISSUE, IF YOU WANT TO KNOW MORE DETAILS, PLEASE REFER TO https://github.com/newlei/LR-GCCF
+        self.final_user_embedding = first_gcn_user_embedding + second_gcn_user_embedding + user_embedding_from_consumed_items
+        
         latest_user_latent = tf.gather_nd(self.final_user_embedding, self.user_input)
         latest_item_latent = tf.gather_nd(self.final_item_embedding, self.item_input)
-
+        
         predict_vector = tf.multiply(latest_user_latent, latest_item_latent)
+        
         self.prediction = tf.sigmoid(tf.reduce_sum(predict_vector, 1, keepdims=True))
         #self.prediction = self.predict_rating_layer(tf.concat([latest_user_latent, latest_item_latent], 1))
 
