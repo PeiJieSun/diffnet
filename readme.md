@@ -30,6 +30,14 @@ The dataset flickr we use from this paper:
  conference={42nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
  year={2019}
  }
+ 
+ If you want to know more details about how to tackle the graph oversmoothing issue, please refer to:
+ @inproceedings{
+ title={Revisiting Graph based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach},
+ author={Lei Chen, Le Wu, Richang Hong, Kun Zhang, Meng Wang},
+ conference={The 34th AAAI Conference on Artificial Intelligence (AAAI 2020)},
+ year={2020}
+ }
  ```
 
 ### Author contact:
