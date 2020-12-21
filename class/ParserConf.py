@@ -1,9 +1,3 @@
-'''
-    author: Peijie Sun
-    e-mail: sun.hfut@gmail.com 
-    released date: 04/18/2019
-'''
-
 import ConfigParser as cp
 import re, os
 
@@ -40,11 +34,13 @@ class ParserConf():
         conf.read(self.config_path)
         self.conf = conf
 
+
         self.conf_dict = {}
         for section in conf.sections():
             for (key, value) in conf.items(section):
                 print(key, value)
                 self.processValue(key, value)
+        #set_trace()
        
         self.data_dir = os.path.join(os.getcwd(), 'data/%s' % self.data_name)
         self.links_filename = os.path.join(os.getcwd(), 'data/%s/%s.links' % (self.data_name, self.data_name))

@@ -1,9 +1,3 @@
-'''
-    author: Peijie Sun
-    e-mail: sun.hfut@gmail.com 
-    released date: 04/18/2019
-'''
-
 import sys, os, argparse
 
 sys.path.append(os.path.join(os.getcwd(), 'class'))
@@ -11,17 +5,15 @@ sys.path.append(os.path.join(os.getcwd(), 'class'))
 from ParserConf import ParserConf
 from DataUtil import DataUtil
 from Evaluate import Evaluate
-
-from diffnet import diffnet
+from diffnetplus import diffnetplus
 
 def executeTrainModel(config_path, model_name):
     print(config_path)
-    #print('System start to prepare parser config file...')
+    print('System start to prepare parser config file...')
     conf = ParserConf(config_path)
     conf.parserConf()
-    print conf.topk
-    
-    #print('System start to load TensorFlow graph...')
+
+
     model = eval(model_name)
     model = model(conf)
 
@@ -41,6 +33,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     data_name = args.data_name
+
     model_name = args.model_name
     device_id = args.gpu
     
