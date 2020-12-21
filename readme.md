@@ -9,7 +9,7 @@ Le Wu, Junwei Li, Peijie Sun, Richang Hong, Yong Ge, and Meng Wang. DiffNet++: A
 1. Environment: I have tested this code with python2.7, tensorflow-gpu-1.12.0 
 3. Run DiffNet: 
    1. Download the yelp data from this [link](https://drive.google.com/drive/folders/1hIkRDIVI87CUM4xFGjHMeipOlPz97ThX?usp=sharing), and unzip the directories in yelp data to the sub-directory named diffnet of your local clone repository.
-   2. cd the diffnet directory and execute the command `python entry.py --data_name=<data_name> --model_name=diffnet --gpu=<gpu id>` 
+   2. cd the sub-directory diffnet and execute the command `python entry.py --data_name=<data_name> --model_name=diffnet --gpu=<gpu id>` 
 4. Run DiffNet++: cd the diffnet++ directory and execute the command `python entry.py --data_name=<data_name> --model_name=diffnetplus --gpu=<gpu id>` 
 5. If you have any available gpu device, you can specify the gpu id, or you can just ignore the gpu id. 
 
