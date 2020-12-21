@@ -15,7 +15,7 @@ Le Wu, Junwei Li, Peijie Sun, Richang Hong, Yong Ge, and Meng Wang. DiffNet++: A
    2. cd the sub-directory diffnet++ and execute the command `python entry.py --data_name=<data_name> --model_name=diffnetplus --gpu=<gpu id>` 
 5. If you have any available gpu device, you can specify the gpu id, or you can just ignore the gpu id. 
 
-Following are the examples:  
+Following are the command examples:  
 `python entry.py --data_name=yelp --model_name=diffnet`  
 `python entry.py --data_name=yelp --model_name=diffnetplus`
 
