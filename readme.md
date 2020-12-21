@@ -45,7 +45,7 @@ The dataset flickr we use from this paper:
  }
  
  We utilized the key technique in following paper to tackle the graph oversmoothing issue, and we have annotated
- the change in line 114 in diffnet/diffnet.py, if you wang to konw more details, please refer to:
+ the change in line 114 in diffnet/diffnet.py, if you want to konw more details, please refer to:
  @inproceedings{
  title={Revisiting Graph based Collaborative Filtering: A Linear Residual Graph Convolutional Network Approach},
  author={Lei Chen, Le Wu, Richang Hong, Kun Zhang, Meng Wang},
