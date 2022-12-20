@@ -6,7 +6,7 @@ Le Wu, Junwei Li, Peijie Sun, Richang Hong, Yong Ge, and Meng Wang. DiffNet++: A
 
 
 ### Usage:
-1. Environment: If you use python2.7, tensorflow-gpu-1.12.0, you can run the code in directory diffnet-tensorflow-v1; if you use python 3.7, tensorflow-gpu-1.15, you can run the code in directory diffnet-tensorflow-v1-python3.
+1. **Environment: If you use python2.7, tensorflow-gpu-1.12.0, you can run the code in directory diffnet-tensorflow-v1; if you use python 3.7, tensorflow-gpu-1.15, you can run the code in directory diffnet-tensorflow-v1-python3.**
 3. Run DiffNet: 
    1. Download the yelp data from this [link](https://drive.google.com/drive/folders/1hIkRDIVI87CUM4xFGjHMeipOlPz97ThX?usp=sharing), and unzip the directories in yelp data to the sub-directory named diffnet of your local clone repository.
    2. cd the sub-directory diffnet and execute the command `python entry.py --data_name=<data_name> --model_name=diffnet --gpu=<gpu id>` 
