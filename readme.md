@@ -1,5 +1,5 @@
 ### ⭐UPDATE 20221220:
-* As the python 2.7 is deprecated, I have convert the diffnet code into a new one to make it can be used under python 3.x. If you use python 3.x, tensorflow-gpu-1.x, you can run the code in directory diffnet-tensorflow-v1-python3. I have tested the development environment python 3.7, and tensorflow-1.15. *
+*As the python 2.7 is deprecated, I have convert the diffnet code into a new one to make it can be used under python 3.x. If you use python 3.x, tensorflow-gpu-1.x, you can run the code in directory diffnet-tensorflow-v1-python3. I have tested the development environment python 3.7, and tensorflow-1.15.*
 
 ### Basic Information:
 This code is released for the papers: 
