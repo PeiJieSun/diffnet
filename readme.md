@@ -1,4 +1,7 @@
-### ⭐UPDATE 20221220:
+### ⭐UPDATE 20240602:
+We have further utilized the nearest-neighbors collaborative signal to enhance the performance of LightGCN, SGL. The new work can refer (https://github.com/PeiJieSun/NESCL)[https://github.com/PeiJieSun/NESCL].
+
+### 20221220:
 *As the python 2.7 is deprecated, I have convert the diffnet code into a new one to make it can be used under python 3.x. If you use python 3.x, tensorflow-gpu-1.x, you can run the code in directory diffnet-tensorflow-v1-python3. I have tested the development environment python 3.7, and tensorflow-1.15.*
 
 ### Basic Information:
